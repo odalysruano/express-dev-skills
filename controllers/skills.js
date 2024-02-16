@@ -14,7 +14,12 @@ function show(req, res) {
     });
 }
 
+function newSkill (req, res) {
+    res.render('skills/new', { title: 'New Skill'});
+}
+
 module.exports = {
     index,
     show,
+    new: newSkill
 };
